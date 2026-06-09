@@ -11,6 +11,7 @@ def filter_epw(input_path, output_path, months=None, days=None, hours=None):
     :param hours: List of integers (1-24)
     """
     
+    
     # 1. Read the header (First 8 lines of an EPW file)
     with open(input_path, 'r') as f:
         header = [next(f) for _ in range(8)]
